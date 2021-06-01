@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malte's Web Browser</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <h1>Malte's Web Browser</h1>
+        <h2>It's like Chrome, but worse</h2>
+
+        <button class="button learn-more-button">Learn More</button>
+        <a href="https://github.com/lordmaltazor" target="_blank"><button
+                class="button github-button">Github</button></a>
+    </section>
+
+    <section>
+        <div class="info">
+            <p class="info-text">A simple and intuitive Desktop Web Browser made by Malte Svensén. It was made using
+                Electron and the
+                "webview" tag</p>
+
+            <img src="./images/webBrowserScreenshot.PNG" alt="Web Browser Screenshot">
+        </div>
+    </section>
+
+    <section>
+        <p class="download-text">Download now, it's free!</p>
+
+        <a href="./electron-web-browser.zip" download="Web Browser"><button
+                class="button download-button">Download</button></a>
+    </section>
+
+    <script>
+        const downloadButton = document.querySelector('download-button');
+        const learnMoreButton = document.querySelector('.learn-more-button');
+        const infoPage = document.querySelector('.info');
+
+        learnMoreButton.onclick = () => {
+            infoPage.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+    </script>
+</body>
+
+</html>

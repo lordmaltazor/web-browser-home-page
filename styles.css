@@ -1,0 +1,133 @@
+:root
+{
+    --primary-color: rgb(88, 187, 149);
+    --dark-primary-color: rgb(71, 148, 119);
+    --light-primary-color: rgb(82, 221, 168);
+}
+
+html, body, section
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2
+{
+    margin: 5px 0;
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.button
+{
+    background: gray;
+    color: white;
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background: darkgray;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.learn-more-button, .github-button
+{
+    background: var(--primary-color);
+    width: 200px;
+    height: 65px;
+    margin-top: 50px;    
+    transition: 0.2s;
+}
+
+.learn-more-button:hover
+{
+    background: var(--light-primary-color);
+}
+
+.github-button
+{
+    background: none;
+    color: gray;
+    margin-top: 30px;  
+    border: 3px solid var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.github-button:hover
+{
+    background: var(--primary-color);
+    color: white;
+}
+
+.info
+{
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-text
+{
+    flex: 1;
+    margin: 0 50px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+img
+{
+    width: 850px;
+    border: 5px solid black;
+}
+
+.download-text
+{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.download-button
+{
+    background: var(--primary-color);
+    transition: background 0.2s;
+}
+
+.download-button:hover
+{
+    background: var(--light-primary-color);
+}
